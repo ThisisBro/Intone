@@ -63,7 +63,7 @@ const POPUP_ENTRY_GRACE_MS = 900;
 
 // 팝업이 등장하거나 compact → summary/detail로 바뀌는 짧은 순간에는
 // 브라우저 좌표/rect가 흔들려 mouseleave가 잘못 들어올 수 있으므로 닫힘 판단을 0.5초 늦춥니다.
-const POPUP_TRANSITION_GUARD_MS = 500;
+const POPUP_TRANSITION_GUARD_MS = 2000;
 
 // 간단 팝업이 떠 있는 상태에서 링크 밖으로 나갔을 때,
 // 링크 → 팝업 이동 또는 다시 링크로 돌아오는 짧은 동작을 허용합니다.
