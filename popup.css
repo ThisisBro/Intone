@@ -919,7 +919,7 @@
 }
 
 #ai-news-link-popup.ai-news-popup--separated .inton-detail-card.ai-news-popup__details.is-open {
-  max-height: var(--inton-detail-max-height, min(560px, calc(100vh - 150px))) !important;
+  max-height: none !important; /* 높이 제한 해제 */
 
   padding: 13px !important;
   border: 1px solid rgba(219, 231, 246, 0.96) !important;
@@ -927,8 +927,7 @@
   opacity: 1 !important;
   pointer-events: auto !important;
 
-  overflow-y: auto !important;
-  overflow-x: hidden !important;
+  overflow: visible !important; /* 내부 스크롤 해제 */
 
   transform: translateY(0) scale(1) !important;
 }
@@ -1245,13 +1244,12 @@
 
 #ai-news-link-popup.ai-news-popup--separated.ai-news-popup--summary-expanded .inton-summary-card {
   height: auto !important;
-  max-height: var(--inton-summary-max-height, 340px) !important;
+  max-height: none !important; /* 높이 제한 해제 */
 
   opacity: 1 !important;
   pointer-events: auto !important;
 
-  overflow-y: auto !important;
-  overflow-x: hidden !important;
+  overflow: visible !important; /* 내부 스크롤 해제 */
 
   transform: translateY(0) scale(1) !important;
 }
